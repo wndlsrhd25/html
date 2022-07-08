@@ -4,33 +4,108 @@
     <meta charset="utf-8">
 
     <title> 애완견종류</title>
+
     <style>
-      span{
-        color : rgb(255, 0, 13)
+   @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&display=swap');
+      body {
+        font-family: 'Cute Font', cursive;
+        font-family: 'Gamja Flower', cursive;
+        font-size: 28px;
+        width: 1000px;
+        margin: 0 auto;
+
+      }
+     
+      #header {
+      height: 70px;
+      background-color: rgb(30, 168, 223);
+      padding: 10px 0 10px 0;
+      text-decoration: none;
+      }
+    
+      nav ul li {
+       display: inline-block;
+       float : right;
+       display : inline;
+       margin: 0 10px 0 10px ;
+       text-decoration: none;
+
+      }
+
+      #container section ul li {
+        text-align: center;
+        padding: 0 20px 0 20px;
+        display: inline-block;
+        text-align: center;
+      }
+
+      #container section ul {
+        text-align: center;
+        padding: 0 100px 0 100px;
+        margin: 20px;
+
+      }
+      .a{
+        padding: 20px;
+        border : 2px solid rgb(187, 196, 196);
+        margin: 10px;
+
+      }
+      article figure {
+        text-align: center;
+      }
+      article figure figcaption {
+        text-align: center;
+      }
+      article p {
+        text-align: right;
+      }
+
+      aside {
+        padding: 10px;
+        background-color:  rgb(227, 249, 250);
+      }
+
+      #container{
+        background-color: rgba(245, 250, 250, 0.911);
+      }
+      footer {
+        background-color: rgba(146, 192, 192, 0.911);
+        font-style: italic;
+        font-weight: bold;
+        text-align: right;
+      }
+      .a h3 {
+        display: inline-block;
+        background-color:  rgba(210, 233, 255, 0.911);
+
       }
     </style>
 
   </head>
   <body>
-    <a id="top"></a>
-    <header>
+    <div id="header">
       <nav>
         <ul>
-          <li><a href="#">애완견종류</a></li>
-          <li><a href="#">강아지용품</a></li>
-          <li><a href="#">더불어살기</a></li>
-          <li><a href="#">건강돌보기</a></li>
+          <li><a href="#"style="color:white">애완견종류</a></li> 
+          <li><a href="#"style="color:white">강아지용품</a></li>
+          <li><a href="#"style="color:white">입양하기</a></li>
+          <li><a href="#"style="color:white">건강돌보기</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+
+    <div id="container">
+    <a id="top"></a>
     <section>
       <h1>애완견 종류</h1>
       <ul>
-        <li><a href="#act">활달한강아지</a></li>
-        <li><a href="#soon">온순한강아지</a></li>
-        <li><a href="#sanap"><span>사납지만</span> 복종적인 강아지</a></li>
+        <li><a href="#act" style="color:black;">활달한강아지</a></li>
+        <li><a href="#soon"style="color:black;">온순한강아지</a></li>
+        <li><a href="#sanap"style="color:black;">사납지만 복종적인 강아지</a></li>
       </ul>
-    <article>
+
+    <article class = "a">
       <a id ="act"></a>
       <h3>활달한강아지</h3>
       <dl>
@@ -39,21 +114,24 @@
         <dt> 말티즈 </dt>
         <dd> 애정이 많고, 충실하며 활발한 성격을 소유하고 있다. 이 종은 1급 가정견으로 요크셔테리어와 함께 우리나라 최고의 가정견으로 자리잡고 있다.</dd>
         <dt> 포메 라니안</dt>
-        <dd> 활기차고 명량한 개로 유명하고, 걷는 모습이 우아하다. 충ㅇ실하고 우호적인 성격이 가장 먼저 거론된다.</dd>
+        <dd> 활기차고 명량한 개로 유명하고, 걷는 모습이 우아하다. 충실하고 우호적인 성격이 가장 먼저 거론된다.</dd>
         <dt> 골든 리트리버 </dt>
         <dd> 이 견은 충성심이 강하고 성격이 활달하여 어린아이나 여성이 상대하기에 적합한 견종이다. 참을성 또는 강하여 현재는 실내에서도 많이 길러지고 있다.</dd>
       </dl>
+    </article>
+
+    <article>
       <figure>
         <img src="img/요크셔테리어.jpg" height="200" width="200">
         <img src ="img/드라이브.jpg" height="200" width="200">
-        <img src ="img/포메.jpg.crdownload" height="200" width="200">
+        <img src ="img/포메.jpg" height="200" width="200">
         <img src = "img/골든.jpg"  height="200" width="200">
         <figcaption>활달한강아지</figcaption>
       </figure>
       <p><a href="#top">처음으로</a></p>
     </article>
     
-    <article>
+    <article class = "a">
       <a id ="soon"></a>
       <h3>온순한강아지</h3>
       <dl>
@@ -64,6 +142,8 @@
         <dt>래브리도 리트리버</dt>
         <dd>침착하고 영리하며 어린이들을 안심하고 맡길 수 있다. 사람을 즐겁게 해주려는 성질이 있다. 공을 가지고 노는 것을 가장 좋아한다. 현재 명인 안내견과 마약견으로 사용중이다. 온순한 강아지를 좋아하는 분에게 적합한 견종이다.</dd>
       </dl>
+    </article>
+    <article>
       <figure>
         <img src="img/시츄.jpg"  height="200" width="200">
         <img src="img/퍼그.jpg" height="200" width="200">
@@ -73,7 +153,7 @@
       <p><a href="#top">처음으로</a></p>
     </article>
 
-    <article>
+    <article class = "a">
       <a id="sanap"></a>
       <h3>사납지만 복종적인 강아지</h3>
       <dl>
@@ -84,6 +164,8 @@
         <dt>폭스테리어</dt>
         <dd>가정에서 키우기에 적합한 품종이다. 보호본능이 강하고 정이 많다. 하지만 사냥을 하던 본능이 남아있어 사나운 면이 있다. 이종을 좋은 품종으로 기르기 위해서는 어릴 때 부터 엄한 훈련이 필요하기도 하다. </dd>
       </dl>
+    </article>
+    <article>
       <figure>
         <img src="img/미니어쳐핀셔.jpg"  height="200" width="200">
         <img src="img/푸들.jpg" height="200" width="200">
@@ -92,8 +174,8 @@
       </figure>
       <p><a href="#top">처음으로</a></p>
     </article>
-
     </section>
+
       <aside>
         <h3>건강한 강아지는</h3>
       <ul>
@@ -104,9 +186,9 @@
         <li>강아지들 중에서 적당한 체구를 유지한 강아지가 좋습니다.</li> 
       </ul>
     </aside>
-    <iframe src="프로필.html" width="600", height="400" semless>프로필 삽입</iframe>
     <footer>
       <address>주소 대구 중구 예담</address>
     </footer>
+  </div>
   </body>
 </html>

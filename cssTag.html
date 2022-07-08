@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    table{
+     
+      border-collapse: collapse;
+    }
+    th, td{
+      border : 1px solid rgb(128, 118, 73);
+      padding : 5px;
+
+    }
+    thead {
+      background-color: beige;
+      
+    }
+    caption {
+      margin-bottom: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <table>
+    <caption><h3>CSS3 요약</h3></caption>
+    <thead>
+      <tr>
+        <th>선택자</th>
+        <th>설명</th>
+        <th>사용 예</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>전체 선택자</td>
+        <td>모든 요소에 적용</td>
+        <td>*{...}</td>
+      </tr>
+      <tr>
+        <td>태그 선택자</td>
+        <td>특정 태그에 적용</td>
+        <td>P{...}</td>
+      </tr>
+      <tr>
+        <td>그룹선택자</td>
+        <td>여러 태그에 적용</td>
+        <td>p,a,li{...}</td>
+      </tr>
+      <tr>
+        <td>클래스 선택자</td>
+        <td>특정 부분에 적용(여러 번 사용)</td>
+        <td>.red{...} -> p class="red"</td>
+      </tr>
+      <tr>
+        <td>id 선택자</td>
+        <td>특정 부분에 적용(한번만 사용)</td>
+        <td>#rea{...} -> p id="red"</td>
+      </tr>
+      <tr>
+        <td>하위선택자</td>
+        <td>모든 하위 요소에 스타일 적용</td>
+        <td>section p{...}</td>
+      </tr>
+      <tr>
+        <td>자식 선택자</td>
+        <td>자식 요소에만 적용</td>
+        <td>Section > p{...}</td>
+      </tr>
+      <t  
+      0r>
+        <td>인접 형제 선택자</td>
+        <td>첫번째 동생 요소에 적용</td>
+        <td>h1+p{...}</td>
+      </t>
+      <tr>
+        <td>형제 선택자</td>
+        <td>모든 형제 요소에 적용
+        <td>H1~P{...}</td>
+      </td>
+      <tr>
+        <td>속성 선택자</td>
+        <td>속성값을 비교해서 스타일 적용</td>
+        <td>a[target]{…}, a[target=“_blank]{…}, a[class~=“button”], a[href^=“http://], a[href$=“.zip”] 
+          <br> A[href|=“en”],  a[class*=“accent”]  
+          <br>(~=:or, ^=:문자로 시작하는, $=:문자로 끝나는, |=:문자로 시작하는(- 포함), *=: 값이 포함된)</td>
+      </tr>
+      </tr>
+    </tbody>
+</body>
+</html>
