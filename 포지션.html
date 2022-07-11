@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>포지션</title>
+  <style>
+
+  div {
+    width : 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+    #container{
+      position: relative;
+      border : 1px solid rgb(0, 0, 0);
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    #box1{
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      background-color: rgb(193, 253, 253);
+    }
+
+    .box2{
+      position: relative;
+      background-color: rgb(255, 246, 246);
+      top:25px; left : 50px;
+      width: 400px;
+      height: 300px;
+      border:1px solid rgb(141, 25, 25);
+    }
+    .box{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(255, 201, 201);
+    }
+    #crd1{top:0; left:0}
+    #crd2{top:0; right:0;}
+    #crd3{bottom: 0; left: 0;}
+    #crd4{bottom: 0; right: 0;}
+    #crd5{top :100px; left :80px }
+
+    #wrap1{
+      width: 50px;
+      height: 50px;
+      top: 100px ; left :200px;
+      background-color: rgb(205, 188, 221);
+      z-index: 3;
+    }
+    #wrap2{
+      width: 50px;
+      height: 50px;
+      top :120px; left : 225px;
+      background-color: rgb(142, 89, 192);
+      z-index: 1;
+    }
+    #wrap3{
+      width: 50px;
+      height: 50px;
+      top: 130px; left : 210px;
+      background-color: rgb(94, 33, 155);
+      z-index: 2;
+    }
+  
+    #fixed{
+      position: fixed; 
+      right: 10px; top:10px;
+      width: 100px;
+      background-color: aquamarine;
+    }
+
+    #img {
+      margin-top: 40px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      clear: both;
+      display: flex;
+      text-align: justify;
+
+    }
+   
+    #img1{ 
+      width: 90px;
+      height: 140px;
+      margin-right : 50px;
+      margin-left : 20px; 
+    }
+
+    #img2{
+      width: 90px;
+      height: 140px;
+      margin-right : 50px;
+      margin-left : 20px; 
+    }
+
+    #img3{
+      width: 90px;
+      height: 140px;
+      margin-right : 50px;
+      margin-left : 20px; 
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="container">
+
+    <div id="box1"> 박스1 </div>
+    <div class="box2">박스2
+      <div class="box", id="crd1">1번</div>
+      <div class="box", id="crd2">2번</div>
+      <div class="box", id="crd3">3번</div>
+      <div class="box", id="crd4">4번</div>
+      <div class="box", id="crd5">5번</div>
+      <div class="box", id="wrap1">1</div>
+      <div class="box", id="wrap2">2</div>
+      <div class="box", id="wrap3">3</div>
+    </div>
+
+  <div id = "img">
+    <img id="img1", src="img/도비.jpg">
+    <img id="img2", src="img/시츄.jpg">
+    <img id="img3", src="img/푸들.jpg">
+  </div>
+
+  </div>
+  <div id="fixed">fixed</div>
+</body>
+</html>

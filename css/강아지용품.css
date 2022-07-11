@@ -1,0 +1,92 @@
+#container{
+  width: 800px;
+  margin : 0 auto;
+}
+
+header{
+  background-color :rgb(255, 225, 221);
+  height : 100px;
+}
+#logo {
+  width: 200px;
+  height : 100px;
+  float : left;
+}
+#logo img{
+  width :90px;
+  height: 100px;
+}
+nav{
+  width : 500px;
+  float : right;
+  margin-top :13.5px;
+}
+
+nav ul{
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+nav a{
+  text-decoration: none;
+  color : rgb(20, 9, 9);
+  font-weight: bold;
+}
+
+/* section */
+section {
+  width: 600px;
+  float : left;
+}
+article {
+  width: 283px;
+  height: 300px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  float : left;
+  margin-right : 5px;
+  margin-bottom : 5px; 
+  text-indent: 16px;
+  text-align: justify;
+}
+
+#art1:hover {
+  background-color: rgb(241, 194, 214);
+  color:#fff
+}
+#art2:hover {
+  background-color: rgb(241, 194, 214);
+  color:#fff
+}
+#art3:hover {
+  background-color: rgb(241, 194, 214);
+  color:#fff
+}
+#art4:hover {
+  background-color: rgb(241, 194, 214);
+  color:#fff
+}
+
+/* aside */
+aside{
+  margin-top: 72px;
+  height: 617px;
+  width : 180px;
+  float: right;
+}
+aside img {
+  width :180px;
+  height: 205.5px;;
+}
+
+/*footer*/
+footer {
+  clear : both;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(255, 206, 206);
+}

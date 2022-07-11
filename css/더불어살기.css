@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&display=swap');
+body{
+ font-family: 'Cute Font', cursive;
+ font-family: 'Gamja Flower', cursive;
+}
+
+h1{
+ color: white;
+ float: left;
+ padding-left: 10PX;
+}
+h2{
+ padding: 10px;
+}
+#container {
+ background-color: rgb(201, 227, 252);
+ width: 800px;
+ margin : 0 auto;
+}
+header{
+ padding-top: 10px;
+ height: 100px;
+ background-color: rgb(120, 164, 230);
+}
+nav{
+ float : right;
+ padding-top: 10px;
+ padding-right: 10px;
+}
+nav ul li {
+ display: inline-block;
+ padding: 10px;
+}
+
+/* section */
+section {
+ float: left;
+ padding-left: 10px;
+ width: 772px;
+ background-color: azure;
+ margin: 8px;
+ display: inline-block;
+}
+article{
+ float: left;
+ width: 500px;
+}
+article ul li {
+   padding: 10px;
+ }
+article ol li {
+ padding: 10px;
+}
+aside {
+ margin-top: -250px; 
+ margin-right: 10px;
+ float: right;
+ width: 200px;   
+ display: inline;
+}
+aside img {
+ width: 190px;
+ height: 480px;
+}
+footer {
+ clear : both;
+ text-align: center;
+ font-weight: bold;
+ padding: 10px;
+ background-color: rgb(255, 206, 206);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang ="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>2단 레이아웃</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <style>
+      *{
+        /* 크기는 무조건 보더 사이즈로 하겠다.*/
+        box-sizing: border-box; 
+      }
+      #container{
+        width :960px;
+        border : 1px solid #aaa;
+        padding : 20px;
+        
+        margin: 0 auto; 
+      }
+
+      .green {
+        color : green;
+      }
+      /* header */
+      header {
+        border : 1px solid #aaa;
+        padding : 10px;
+        margin-bottom : 20px;
+      }
+
+      /* section */
+      section{
+        border : 1px solid #aaa;
+        width : 620px;
+        height: 230px;
+        padding : 20px;
+        float : left;
+      }
+
+      /* aside */
+      aside {
+        border : 1px solid #aaa;
+        width: 220px;
+        height: 230px;
+        padding:20px;
+        float :right;
+        margin-bottom: 20px;
+        background-color: #ddd;
+      }
+      /*footer*/
+      footer{
+        border:1px solid #aaa;
+        clear: both;
+        padding: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>2단 레이아웃</h1>
+      <header>
+        <h2>사이트 제목</h2>
+        <p class="green">-container : 너비 960, 안여백 : 20, 화면 중앙에 위치, 테두리 1px</p>
+      </header>
+      <section>
+        <h2>본문</h2>
+        <p>내용입력</p>
+        <p>내용입력</p>
+        <p class="green">테두리 : 1, 너비 620
+          안여백 :20, 왼쪽 배치
+          아래요소와 간격 20
+        </p>
+      </section>
+      <aside>
+        <h2>사이드 바</h2>
+        <p>광고 1</p>
+        <p class ="green">광고 2</p>
+        <p>테두리 : 1, 너비 220, </p>
+        안여백 20, 오른쪽 배치
+        아래요소와 간격 20, 배경색지정
+      </aside>
+      <footer>
+        <h2>푸터</h2>
+        <p class="green">테두리 1, 양쪽 플로팅 해제, 안여백 10</p>
+      </footer>
+    </div>
+  </body>
+</html>
