@@ -1,0 +1,33 @@
+h1 {
+  width: 500px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+form{
+  width: 500px;
+  margin: 0 auto; /*가운데정렬*/
+  padding: 10px;
+  box-sizing: border-box;
+}
+legend {
+  font-size: 15pt;
+  font-weight: bold;
+  color: rgb(27, 124, 92);
+}
+form ul li{
+    list-style: none;
+    padding: 5px;
+}
+ul li label{
+  display: inline-block;
+  width: 130px;
+}
+.register ul li label {
+  display: inline-block;
+  width: 80px;
+}
+.button {
+text-align: center;
+border: none;
+}

@@ -1,0 +1,57 @@
+
+    form {
+      width: 500px;
+      margin: 0 auto; /*가운데정렬*/
+      background-color: rgb(154, 219, 176);
+      border-radius: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    fieldset {
+      margin-bottom: 10px;
+      border : 2px solid rgb(223, 255, 242);
+      border-radius: 10px;
+    }
+    legend {
+      padding-top: 10px;
+      text-align: center;
+      font-weight: bold;
+      border: 2px ;
+    }
+    
+    form ul li{
+      list-style: none;
+      margin-bottom: 10px;
+      background-color: rgba(255, 255, 255, 0.5) ;
+      padding: 5px;
+      border-radius: 10px;
+    }
+    label{
+      display: inline-block;
+      width: 100px;
+    }
+    input {
+      padding: 3px;
+      width: 200px;
+    }
+    .select input{
+      width: 20px;
+    }
+    .select label {
+      width: 200px;
+    }
+    .chk input{
+      margin-left : 90px;
+    }
+    .center {
+      text-align: center;
+    }
+    .center input {
+      width: 80px;
+      border: none;
+      background-color: aliceblue;
+      font-weight: bold;
+      padding: 7px;
+    }
+
+    

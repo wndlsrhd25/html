@@ -1,0 +1,76 @@
+      @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Pen+Script&display=swap');
+
+      body{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 16pt;
+   
+       
+      }
+      
+      span{color: red;}
+
+      .login input {
+        width: 120px;
+      }
+
+      .login ul {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 3px;
+      }
+
+      input {
+        margin: 3px;
+        font-size: 16pt;
+        font-family: 'Gowun Dodum', sans-serif;
+        font-family: 'Nanum Pen Script', cursive;
+        margin-left: 10px;
+      }
+
+      .private ul li label {
+        display: inline-block;
+        width: 130px;  /* inline-block을 하고 width 조절을 해야지 정렬이 맞춰짐*/
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      form {
+        width: 800px;
+        margin: 0 auto; /*가운데정렬*/
+        padding: 10px;
+        box-sizing: border-box;
+        background-image: url(img/포로리.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      fieldset {
+        padding: 5px; 
+        margin-top: 10px;
+      }
+      .insert ul li{
+        padding: 4px;
+      }
+      .insert ul li label {
+        display: inline-block;
+        width: 130px;
+      }
+      .search {
+        margin-top: 10px;
+      }
+      .search ul {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 3px;
+      }
+
+      legend {
+        font-size: 22pt;
+      }
+
+      #submit {
+        width: 60px;
+      }
