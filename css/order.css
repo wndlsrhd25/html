@@ -1,0 +1,64 @@
+
+  h1 {
+    width: 700px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  form{
+    width: 700px;
+    margin: 0 auto; /*가운데정렬*/
+    padding: 10px;
+    box-sizing: border-box;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image:url("img/포로리.png");
+  }
+
+  form ul li{
+      list-style: none;
+      padding: 5px;
+  }
+  
+  legend {
+    font-size: 15pt;
+    font-weight: bold;
+    color : rgb(128, 56, 56);
+  }
+
+  fieldset {
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .private ul li label {
+    display: inline-block;
+    width: 130px;
+    font-weight: bold;
+  }
+
+  .deliver ul li label{
+    float: left;
+    width: 100px;
+    font-weight: bold;
+    }
+  .deliver ul li input {
+   margin-left: 40px;
+  }
+  #address{
+    width: 400px;
+  }
+  #memo {
+    margin-left: 40px;
+    width: 400px;
+  }
+  
+  #box{
+    width: 50px;
+    margin: 0 5px 0 5px;
+  }
+
+  .select {
+    text-align: center;
+    border: none;
+  }

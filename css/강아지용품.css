@@ -1,28 +1,31 @@
-#container{
+#container {
   width: 800px;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 
-header{
-  background-color :rgb(255, 225, 221);
-  height : 100px;
-}
-#logo {
-  width: 200px;
-  height : 100px;
-  float : left;
-}
-#logo img{
-  width :90px;
+header {
+  background-color: rgb(255, 225, 221);
   height: 100px;
 }
-nav{
-  width : 500px;
-  float : right;
-  margin-top :13.5px;
+
+#logo {
+  width: 200px;
+  height: 100px;
+  float: left;
 }
 
-nav ul{
+#logo img {
+  width: 90px;
+  height: 100px;
+}
+
+nav {
+  width: 500px;
+  float: right;
+  margin-top: 13.5px;
+}
+
+nav ul {
   padding: 0;
 }
 
@@ -30,61 +33,89 @@ nav ul li {
   display: inline-block;
   padding: 10px;
 }
-nav a{
+
+nav a {
   text-decoration: none;
-  color : rgb(20, 9, 9);
+  color: rgb(20, 9, 9);
   font-weight: bold;
 }
 
 /* section */
 section {
   width: 600px;
-  float : left;
+  float: left;
 }
+
+section h1::after {
+  content: "긴급!!";
+  background-color: red;
+  margin-left: 10px;
+  font-size: 14px;
+  /*마음대로 움직일 수 있게 함*/
+  position: relative;
+  top: -2px;
+
+}
+
+p::selection {
+  background-color: rgb(116, 65, 103);
+  color: black;
+}
+
 article {
   width: 283px;
   height: 300px;
   border: 1px solid #ddd;
   padding: 5px;
-  float : left;
-  margin-right : 5px;
-  margin-bottom : 5px; 
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
   text-indent: 16px;
   text-align: justify;
 }
 
+#art1 p::first-letter {
+  color: rgb(241, 148, 176);
+  font-size: 20px;
+}
+
 #art1:hover {
   background-color: rgb(241, 194, 214);
-  color:#fff
+  color: #fff
 }
+
 #art2:hover {
   background-color: rgb(241, 194, 214);
-  color:#fff
+  color: #fff
 }
+
 #art3:hover {
   background-color: rgb(241, 194, 214);
-  color:#fff
+  color: #fff
 }
+
 #art4:hover {
   background-color: rgb(241, 194, 214);
-  color:#fff
+  color: #fff
 }
 
 /* aside */
-aside{
+aside {
   margin-top: 72px;
   height: 617px;
-  width : 180px;
+  width: 180px;
   float: right;
 }
+
 aside img {
-  width :180px;
-  height: 205.5px;;
+  width: 180px;
+  height: 205.5px;
+  ;
 }
 
 /*footer*/
 footer {
-  clear : both;
+  clear: both;
   text-align: center;
   font-weight: bold;
   padding: 10px;

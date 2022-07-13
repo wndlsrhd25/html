@@ -1,85 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>order</title>
-  <style> 
-
-  h1 {
-    width: 700px;
-    padding: 10px;
-    margin: 0 auto;
-  }
-
-  form{
-    width: 700px;
-    margin: 0 auto; /*가운데정렬*/
-    padding: 10px;
-    box-sizing: border-box;
-    background-size: 800px;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-image:url("img/포로리.png");
-  }
-
-  form ul li{
-      list-style: none;
-      padding: 5px;
-  }
-  
-  legend {
-    font-size: 15pt;
-    font-weight: bold;
-    color : rgb(128, 56, 56);
-  }
-
-  fieldset {
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-  .private ul li label {
-    display: inline-block;
-    width: 130px;
-    font-weight: bold;
-  }
-
-  .deliver ul li label{
-    float: left;
-    width: 100px;
-    font-weight: bold;
-    }
-  .deliver ul li input {
-   margin-left: 40px;
-  }
-  #address{
-    width: 400px;
-  }
-  #memo {
-    margin-left: 40px;
-    width: 400px;
-  }
-  
-  #box{
-    width: 50px;
-    margin: 0 5px 0 5px;
-  }
-
-  .select {
-    text-align: center;
-    border: none;
-  }
-
-  </style>
+  <link rel="stylesheet" href="css/order.css">
 </head>
+
 <body>
   <h1>상품주문서</h1>
   <form>
-    <fieldset class = "private">
+    <fieldset class="private">
       <legend>개인정보</legend>
       <ul>
         <li>
           <label for="name">이름</label>
-          <input type="text" id="name" placeholder="여백없이 입력">  
+          <input type="text" id="name" placeholder="여백없이 입력">
         </li>
         <li>
           <label for="phone">연락처</label>
@@ -88,20 +24,20 @@
       </ul>
     </fieldset>
 
-    <fieldset class = "deliver">
+    <fieldset class="deliver">
       <legend>배송지 정보</legend>
       <ul>
         <li>
           <label for="address">주소</label>
-          <input type="text" id="address">  
-         </li>
-         <li>
+          <input type="text" id="address">
+        </li>
+        <li>
           <label for="phonenumber">전화번호</label>
           <input type="text" id="phonenumber">
         </li>
         <li>
           <label for="memo">메모</label>
-          <textarea id="memo" cols="30" rows="5"></textarea> 
+          <textarea id="memo" cols="30" rows="5"></textarea>
         </li>
       </ul>
     </fieldset>
@@ -110,20 +46,21 @@
       <legend>주문 정보</legend>
       <ul>
         <li>
-          <label><input type="radio">경북성주 참외(5kg)</label><input id= "box" type="number" min="0" placeholder="0">BOX
+          <label><input type="radio">경북성주 참외(5kg)</label><input id="box" type="number" min="0" placeholder="0">BOX
         </li>
         <li>
-          <label><input type="radio">경북영천 포도(5kg)</label><input id= "box" type="number" min="0" placeholder="0">BOX
-         </li>
-         <li>
-          <label><input type="radio">경북봉화 수박(5kg)</label><input id= "box" type="number" min="0" placeholder="0">BOX
+          <label><input type="radio">경북영천 포도(5kg)</label><input id="box" type="number" min="0" placeholder="0">BOX
+        </li>
+        <li>
+          <label><input type="radio">경북봉화 수박(5kg)</label><input id="box" type="number" min="0" placeholder="0">BOX
         </li>
       </ul>
     </fieldset>
     <fieldset class="select">
-    <input type="submit" value="주문하기">
-    <input type="submit" value="다시작성">
-  </fieldset>
+      <input type="submit" value="주문하기">
+      <input type="submit" value="다시작성">
+    </fieldset>
   </form>
 </body>
+
 </html>
