@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>기본문법</title>
+</head>
+
+<body>
+  <script>
+    // //1. 가로세로 넓이 구하기
+    // let width = prompt('가로를 입력하세요', '5');
+    // let height = prompt('세로를 입력하세요', '5');
+
+    // let num = Number(width);
+    // let num2 = Number(height);
+
+    // alert(num * num2);
+
+    // //2. 태어난 연도 구하기
+    // let year = prompt('태어난 연도?');
+    // //`백커트로 묶으면 문자열로 인식해서 변수명은 ${}로 하면 됨
+    // document.write(`태어난 연도는 ${year}년이고, 나이는 ${(2022 - year + 1)}살 입니다.`);
+
+
+    // //3. 짝수, 홀수 구하기
+    // let input = prompt("숫자를 입력하세요");
+    // let num = Number(input);
+
+    // if ((num % 2) == 0) {
+    //   alert("짝수 입니다.")
+    // } else {
+    //   alert("홀수 입니다.")
+    // }
+
+    // //4. 과목 평균 구하기
+    // let ko = Number(prompt("국어점수를 입력하세요"));
+    // let en = Number(prompt("영어점수를 입력하세요"));
+    // let ma = Number(prompt("수학점수를 입력하세요"));
+
+    // let sum = ko + en + ma;
+    // let avg = sum / 3;
+    // document.writeln(`합계는 : ${sum}이고, 평균은 ${parseInt(avg)}입니다.`);
+
+    // if (avg > 90) {
+    //   alert("수")
+    // } else if (avg > 80) {
+    //   alert("우")
+    // } else if (avg > 70) {
+    //   alert("미")
+    // } else if (avg > 60) {
+    //   alert("양")
+    // } else {
+    //   alert("가")
+    // }
+
+    // 5. 요일구하기
+    let day = Number(prompt("날짜를 입력하세요"));
+
+    switch (day % 7) {
+      case 0:
+        console.log("일요일");
+        break;
+      case 1:
+        console.log("월요일");
+        break;
+      case 2:
+        console.log("화요일");
+        break;
+      case 3:
+        console.log("수요일");
+        break;
+      case 4:
+        console.log("목요일");
+        break;
+      case 5:
+        console.log("금요일");
+        break;
+      case 6:
+        console.log("토요일");
+        break;
+    }
+
+    //6. 나이 구하기
+
+    let age = Number(prompt("나이를 입력하세요"));
+
+    switch (age > 18) {
+      case true:
+        alert(`${age}세 판매 가능!`);
+        break;
+      case false:
+        alert(`${age}세 판매 불가!`);
+    }
+
+  </script>
+</body>
+
+</html>

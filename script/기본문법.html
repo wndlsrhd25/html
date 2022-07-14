@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>기본문법</title>
+</head>
+
+<body>
+  <script>
+
+    // // 화면에서 보이는 것
+    // document.write('hello javascript');
+    // // 검사 눌러서 콘솔창에 뜨는 것
+    // console.log('hello javascript');
+    // // 경고창에서 뜨는것
+    // alert('hello javascript');
+
+    let input = prompt('숫자를 입력해 주세요', '5');
+
+    // let check = confirm('숫자가 맞나요?');
+    // console.log('입력받은 숫자 : ' + input + ', 숫자 : ' + check + ', 입니다!');
+
+    let num = Number(input);
+    let str = String(input);
+    console.log('---------- 더하기 ----------')
+    //input은 문자열로 입력이 됨
+    //+
+    console.log('input : ', + str + ', ' + (input + str));
+    console.log('input : ', + num + ', ' + (input + num));
+    console.log('input : ', + num + ', ' + (num + num));
+
+    console.log('---------- 빼기 ----------')
+    console.log('input : ', + str + ', ' + (input - str));
+    console.log('input : ', + num + ', ' + (input - num));
+    //`백커트로 묶으면 문자열로 인식해서 변수명은 ${}로 하면 됨
+    console.log(`input :  ${num}, ${(num - num)}`);
+
+  </script>
+</body>
+
+</html>
