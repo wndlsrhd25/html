@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Function</title>
+</head>
+
+<body>
+  <script>
+
+    // // 함수 선언 방식1: 선언문 형태
+    // function myFun1(param) {
+    //   console.log(param + " run!");
+    // }
+    // //함수 정의 방식2 : 함수 표현식(리터럴 방식)
+    // const myFun2 = function (param) {
+    //   console.log(param + " run!");
+    // }
+    // // 함수 사용 : 호출
+    // myFun1("func1");
+    // myFun2("func2");
+
+
+    // //콜백 함수 - 파라미터로 함수를 가지는 함수를 의미
+    // function callTenTimes(callback) {
+    //   for (let i = 0; i < 10; i++) {
+    //     callback();
+    //   }
+    // }
+    // let callback = function () {
+    //   console.log('함수호출');
+    //   console.log('\n');
+    // }
+    // callTenTimes(callback);
+
+
+
+    // //자기 호출 함수
+    // function returnFunction() {
+    //   return function () {
+    //     console.log('hello Function');
+    //   }
+    // }
+    // returnFunction()();
+    // //첫번째()는 함수를 가지고 잇는것 두번째 ()는 함수를 실행해라는것
+    // // returnFunction()() => (function(){console.log('hello Function')})();
+
+
+
+    //화살표 함수(익명함수에서만 사용)
+    // let sum = function (a, b) {
+    //   return a + b;
+    // }
+
+    // console.log(sum(5, 10));
+
+    // // const hi = function () {
+    // //   return "hi?";
+    // // }
+
+    // let hi = function () {
+    //   alert('hi?');
+    // }
+
+
+
+    // // let sum = (a, b) => { return a + b }
+    // let sum = (a, b) => a + b;
+
+    // console.log(sum(5, 10));
+
+    // // const hi = () => { return 'hi?' }
+    // let hi = () => alert('hi?');
+    // //hi를 호출하는것
+    // hi();
+
+
+    // // 클로저
+    // function test(name) {
+    //   let output = 'hello! ' + name;
+
+    //   return function () {
+    //     console.log(output);
+    //   };
+    // }
+
+    // let test1 = test('web');
+    // let test2 = test('javascript');
+    // //호출하는것
+    // test1();
+    // test2();
+
+
+    //커링
+    // function orderSet(burger) {
+    //   return function oderBeverage(beverage) {
+    //     return function orderSide(side) {
+    //       return function orderKetchup(yn) {
+    //         return function orderChiken(count) {
+    //           console.log("세트:" + burger + ", " + beverage + ", " + side + ", 케쳡(" + yn + "), 조각치킨(" + count + "개)");
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    // let order = orderSet("치즈버거")("콜라");
+    // order("프렌치후라이")("y")("2");
+
+
+    // let orderSet = (burger) => (beverage) => (side) => (yn) => (count) => {
+    //   console.log(`세트 ${burger}, ${beverage}, ${side}, 케첩 ${yn}, 조각 치킨 ${count} 개`);
+    // }
+    // let order = orderSet("치즈버거")("콜라");
+    // order("프렌치후라이")("y")("2");
+
+
+    // // 변수의 스코프
+    // var a = 1;
+    // var b = 5;
+    // function outfunc() {
+    //   function innerfunc() {
+    //     a = b;
+    //   }
+    //   console.log(a); // var은 전역 변수니까 1이 나옴
+
+    //   a = 3;
+    //   b = 4;
+
+    //   innerfunc();
+    //   console.log(a); // inerfunc에 들어가서 a가 b(4) 값을 받앗기 떄문에 4로 나옴
+
+    //   var b = 7;
+    //   console.log(b); // 전역변수니까 7이 나옴
+    // }
+
+    // outfunc();
+    // console.log(b); // 전역변수 5값이 나옴
+
+
+    // //도전 문제
+    // // 함수의 매개변수가 3개고 평균을 구해서 리턴
+
+    // for (let i = 0; i < 3; i++) {
+    //   let name = prompt('이름을 입력하세요');
+    //   let korean = Number(prompt('국어성적을 입력하세요'));
+    //   let english = Number(prompt('영어성적을 입력하세요'));
+    //   let math = Number(prompt('수학성적을 입력하세요'));
+
+    //   sungjuk(name, korean, english, math);
+    // }
+
+    // function sungjuk(name, ko, en, ma) {
+    //   let avg = (ko + en + ma) / 3;
+    //   console.log(`${name} | ${ko} | ${en} | ${ma} | 평균 : ${avg}`);
+    // }
+
+
+    // function clone(obj) {
+    //   let output = {};
+    //   for (let i in obj) {
+    //     output[i] = obj[i];
+    //   }
+    //   return output;
+    // }
+    // let original = { a: 10, b: 20 };
+    // let referenced = original;
+    // let cloned = clone(original);
+    // original.a = 88;
+
+    // console.log(original);
+    // console.log(referenced);
+    // console.log(cloned);
+
+
+
+    // let object = {
+    //   number: 273, string: 'text', Boolean: true, array: [1, 2, 3, 4], func: function () { }
+    // }
+    // let output = '';
+    // for (let key in object) {
+    //   output += '-' + key + ':' + object[key] + '\n';
+    // }
+    // console.log(output);
+
+    //도전 문제 풀이
+    // function Product(name, weight, price) {
+    //   this.name = name;
+    //   this.weight = weight;
+    //   this.price = price;
+    // }
+
+    // Product.prototype.calculate = function (weight) {
+    //   return this.price * (weight / this.weight);
+
+    // }
+    // let product = new Product('돼지삼겹살', '100', '1690');
+    // console.log(product.name + ':' + product.calculate(300) + '원');
+
+
+    // class Food {
+    //   constructor() {
+
+    //   }
+    //   set eat(food) {
+    //     this.food = food;
+    //   }
+
+    //   get eat() {
+    //     return this._food;
+    //   }
+
+    // }
+    // let breakfast = new Food();
+    // breakfast.eat = 'noodle';
+    // console.log(breakfast.eat);
+    // console.log(breakfast.food);
+
+
+    //객체 속성 값 얻기, 추가, 수정 삭제 예 p125
+    let friends = { brand: "카카오", original: [{ name: "라이언", age: 5 }, { name: '어피치', age: 4 }], newbee: { name: '네온', age: 3 } };
+    //속성값 얻기
+    console.log(friends.original[0]);
+    console.log(friends.original[1].age);
+    console.log(friends.original.length);
+    console.log(friends.newbee.name);
+
+
+
+    //속성 추가
+    friends.newbee['sex'] = 'female';
+    //객체 배열로 변환
+    friends['newbee'] = [friends["newbee"], { name: '콘', age: 2 }];
+    console.log(friends.newbee);
+
+    // //속성 삭제
+    delete friends.newbee[0].sex;
+    //pop은 마지막 요소를 삭제하는 뜻
+    friends.newbee.pop();
+    delete friends.brand;
+    console.log(friends);
+
+
+
+  </script>
+
+</body>
+
+</html>
