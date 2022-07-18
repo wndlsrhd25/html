@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>array</title>
+</head>
+
+<body>
+  <script>
+    let seasons = ['봄', '여름', '가을', '겨울']
+    let colors = ['초록', '파랑', '빨강', '하양']
+    console.log(seasons)
+    console.log(seasons.length)
+    console.log(seasons[2])
+
+    for (let i = 0; i < seasons.length; i++) {
+      console.log(seasons[i])
+    }
+
+    for (let i in seasons) {
+      console.log(seasons[i])
+    }
+
+    for (let element of seasons) {
+      console.log(element)
+    }
+
+    console.log('----------concat----------')
+    //concat()연결하기
+    let concats = seasons.concat(colors)
+    console.log(concats)
+
+    //join()결합하기
+    console.log(colors.join()) //기본적으로 ,가 들어감
+    console.log(colors.join(':')) // : 이거로 구문하겠다
+
+    //reverse ()배열 뒤집기
+    console.log(colors.reverse())
+
+    //unshift()맨 앞에 추가  push()맨 끝에 추가
+    //shift() 맨 앞이 삭제 pop()맨 끝이 삭제
+    console.log(colors.reverse())
+    colors.push('검정')
+    colors.unshift('주황')
+    console.log(colors) //['주황', '초록', '파랑', '빨강', '하양', '검정']
+    // colors.pop()
+    // colors.shift() 
+    console.log(colors) // ['초록', '파랑', '빨강', '하양']
+
+    console.log('----------splice----------')
+    //splice(시작 번호, 삭제 개수, 추가 요소)
+    colors.splice(2, 0, '노랑')
+    console.log(colors)
+
+    console.log('----------slice----------')
+    //slice (시작번호, 끝 번호(추출안됨)) -원본에는 영향을X 새로운 배열을 만드는것
+    let mycolor = colors.slice(2, 5)
+    console.log(mycolor)
+
+    console.log('----------Array.isArray----------')
+    //Array.isArray() 배열인지 확인
+    console.log(Array.isArray(colors))
+
+    console.log('----------indexOf----------')
+    // indexOf() 앞에서 부터 검색, 요소의 인덱스 리턴, 없으면 -1
+    // lastIndexOf() 뒤에서 부터 검색
+    console.log(colors.indexOf('빨강')) //4
+    console.log(colors.lastIndexOf('빨강')) //4 (값은 똑같은데 찾는 속도가 달라지는것)
+    console.log(colors.indexOf('핑크')) //없으니까 -1이 나옴
+
+    console.log('----------forEach----------')
+    //forEach() 배열 요소 사용한 함수 활용 --반복문이 아니라 메소드
+    //배열.forEach(function(배열요소, 인덱스, 배열){});
+    colors.forEach(function (element, index, colors) {
+      console.log(`index : ${index}, element : ${element}, of colors \n`)
+    })
+
+    console.log('----------map----------')
+    //map() 기존 배열을 이용해 새로운 배열 생성
+    let array = [1, 2, 3, 4, 5]
+    let array2 = array.map(function (element) {
+      return element * element;
+    })
+    console.log(array2)
+
+    console.log('----------filter----------')
+    /*
+    조건 메서드 - filter():특정조건 만족하는 요소 추출 -> 새로운 배열 생성
+                  ever(): and   some() : or
+    */
+    let filterArr = array.filter(function (element, index, array) {
+      return element <= 3;
+    })
+    console.log(filterArr)
+
+    function lessthan3(element, index, array) {
+      return element < 3;
+    }
+    let everylt3 = array.every(lessthan3)
+    let somelt3 = array.some(lessthan3)
+    console.log(everylt3)
+    console.log(somelt3)
+
+    console.log('----------reduce----------')
+    //연산 메서드 - reduce() : 왼쪽에서 두 개씩 묶어 하나가 될 때까지 줄여가는 연산
+    //             reduceRight() : 오른쪽에서 두 개씩 묶어 하나가 될 때까지 줄여가는 것
+    let reducearr = array.reduce(function (pre, curr) {
+      //[1,2,3,4,5]에서 1(pre)+2(curr)해서 [3,3,4,5]가 되고 또 3(pre)+3(curr)해서 [6,4,5]가 됨
+      console.log(pre + ':' + curr);
+      return pre + curr;
+    })
+    console.log(reducearr)
+    console.log('----------reduceRight----------')
+    let reduceRarr = array.reduceRight(function (pre, curr) {
+      console.log(pre + ':' + curr);
+      return pre + curr
+    })
+    console.log(reduceRarr)
+
+    console.log('----------sort----------')
+    //sort() : 배열 요소를 순서대로 나열
+    /*
+    비교 함수를 인자로 넣어 배열 자체 정렬, 요소 위치 변환
+    오른차순(a>b, a-b), 내림차순(a<b, b-a)
+    */
+    //숫자정렬
+    let arr1 = [3, 7, 5, 2, 1, 9, 4, 10]
+    console.log(colors)
+    console.log(colors.sort(function (a, b) { return a > b ? 1 : -1 }))
+    console.log(arr1.sort(function (a, b) { return a - b }))
+
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>

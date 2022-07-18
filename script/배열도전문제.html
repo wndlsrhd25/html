@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ArrayQ</title>
+</head>
+
+<body>
+  <script>
+    function Student(name, kor, eng, math, art) {
+      this.name = name
+      this.kor = kor
+      this.eng = eng
+      this.math = math
+      this.art = art
+    }
+
+    Student.prototype.getSum = function () {
+      return this.kor + this.eng + this.math + this.art;
+    }
+    Student.prototype.getAvg = function () {
+      return this.getSum() / 4;
+    }
+    Student.prototype.toResult = function () {
+      return this.name + '\t' + this.getSum() + '\t\t' + this.getAvg()
+    }
+
+    let students = []
+    students.push(new Student('홍길동', 96, 98, 92, 98))
+    students.push(new Student('성춘향', 88, 74, 78, 92))
+    students.push(new Student('이몽룡', 69, 89, 92, 78))
+    students.push(new Student('임영웅', 97, 95, 89, 98))
+    students.push(new Student('성유리', 66, 80, 92, 94))
+
+    // console.log(students[3].name)
+
+    let sungjuk = '이름\t총점\t평균\n'
+
+    sungjuk += '----------------------' + '\n'
+    students.push(new Student('이기환', 20, 20, 20, 20))
+    students.unshift(new Student('김가빈', 100, 100, 100, 100))
+
+
+
+    for (let i in students) {
+      sungjuk += students[i].toResult() + '\n'
+    }
+    sungjuk += '----------------------' + '\n'
+    console.log(sungjuk)
+
+
+
+
+    function Yedam(name, java, db, css, html) {
+      this.name = name
+      this.java = java
+      this.db = db
+      this.css = css
+      this.html = html
+    }
+
+    Yedam.prototype.getSum = function () {
+      return this.db + this.css + this.html
+    }
+
+    Yedam.prototype.getAvg = function () {
+      return this.getSum() / 4
+    }
+
+    Yedam.prototype.toResult = function () {
+      return this.name + '\t' + this.getSum() + '\t\t' + this.getAvg() + '\t'
+    }
+
+    let yedam = []
+    yedam.push(new Yedam('이기환', 100, 60, 60, 60))
+    yedam.push(new Yedam('김가빈', 100, 100, 100, 100))
+    yedam.push(new Yedam('최유리', 100, 100, 98, 95))
+    yedam.push(new Yedam('노혜주', 70, 70, 60, 70))
+
+
+    yedam.sort(function (a, b) {
+      return a.name > b.name ? 1 : -1
+    })
+
+    let jumsu = `이름\t총점\t평균\t\n`
+    jumsu += '----------------------' + '\n'
+
+    for (let i = 0; i < yedam.length; i++) {
+      jumsu += yedam[i].toResult() + '\n'
+    }
+    jumsu += '----------------------' + '\n'
+
+
+    console.log(jumsu)
+    console.log()
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
