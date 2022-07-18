@@ -1,0 +1,31 @@
+<script>
+  // //도전 문제
+  // // 함수의 매개변수가 3개고 평균을 구해서 리턴
+
+  for (let i = 0; i < 3; i++) {
+    let name = prompt("이름을 입력하세요");
+    let korean = Number(prompt("국어성적을 입력하세요"));
+    let english = Number(prompt("영어성적을 입력하세요"));
+    let math = Number(prompt("수학성적을 입력하세요"));
+
+    sungjuk(name, korean, english, math);
+  }
+
+  function sungjuk(name, ko, en, ma) {
+    let avg = (ko + en + ma) / 3;
+    console.log(`${name} | ${ko} | ${en} | ${ma} | 평균 : ${avg}`);
+  }
+
+  //도전 문제 풀이
+  function Product(name, weight, price) {
+    this.name = name;
+    this.weight = weight;
+    this.price = price;
+  }
+
+  Product.prototype.calculate = function (weight) {
+    return this.price * (weight / this.weight);
+  };
+  let product = new Product("돼지삼겹살", "100", "1690");
+  console.log(product.name + ":" + product.calculate(300) + "원");
+</script>
