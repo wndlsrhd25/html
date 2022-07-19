@@ -1,0 +1,52 @@
+ #wrapper{
+      width: 400px;
+      height: 200px;
+      margin: 0 auto ;
+      padding-top:20px;
+      text-align: center;
+      border: 1px solid rgb(168, 168, 168);
+    }
+    input[type="text"]{
+      width: 50px;
+      height: 20px;
+      border: 1px solid rgb(0, 0, 0);
+      text-align: center;
+    }
+
+    input[type ="button"]{
+      width: 60px;
+      height: 40px;
+      border-radius: 10%;
+      
+    }
+
+    .start-bt{
+      margin-left:30px ;
+      background-color: rgb(255, 0, 0);
+      border:1px solid  rgb(255, 0, 0);
+      color:white;
+    }
+    .start-bt:hover {
+      background-color: black;
+      border:1px solid black ;
+
+    }
+    .reset-bt{
+      background-color: rgb(10, 113, 202);
+      border:1px solid  rgb(10, 113, 202);
+      color: white;
+    }
+    .reset-bt:hover {
+      background-color: black;
+      border:1px solid black ;
+    }
+    hr{
+      margin-top: 20px;
+      border: 1px dashed rgb(51,48,48);
+      width: 96%;
+    }
+    .remaining{
+      margin-top: 50px;
+      font-size: 34px;
+
+    }

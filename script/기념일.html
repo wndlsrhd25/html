@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .container{
+      width: 350px;
+      margin: 20px auto;
+      border: 1px solid #222;
+    }
+    .day1{
+      text-align: center;
+      margin-top: 30px;
+
+    }
+    .bar{
+      background: rgb(122, 37, 37);
+      font-weight: bold;
+      padding : 5px 10px;
+      color: aliceblue;
+      margin-top:40px;
+    }
+    .day2 ul{
+      list-style: none; 
+      border-bottom:1px solid #888 ;
+      margin: 20px;
+      padding :10px;
+      overflow: hidden;
+    }
+    .day2 ul:last-child{
+      border: none ;
+    }
+    .item-title{
+      float: left;
+      padding-left: 30px;
+      font-weight: bold;
+
+    }
+    .item-date{
+      float: right;
+      padding-right:30px;
+    }
+
+    .accent{
+      font-weight: bold;
+      font-size: 2em;
+      color:rgb(122, 37, 37);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class = "day1">
+      <h2>우리 헤어진 지</h2>
+      <p id="accent" class ="accent">며칠?</p>
+    </div>
+    <div class ="bar">이별 계산 </div>
+    <div class = "day2">
+      <ul>
+        <li class = "item-title">100일</li>
+        <li class = "item-date" id="date100"></li>
+      </ul>
+      <ul>
+        <li class = "item-title">200일</li>
+        <li class = "item-date" id="date200"></li>
+      </ul>
+      <ul>
+        <li class = "item-title">1년</li>
+        <li class = "item-date" id="date365"></li>
+      </ul>
+      <ul>
+        <li class = "item-title">500일</li>
+        <li class = "item-date" id="date500"></li>
+      </ul>
+    </div>
+  </div>
+<script src="../js/기념일.js"> </script>
+</body>
+</html>
