@@ -3,7 +3,7 @@ let sec;
 let timer;
 
 function startTimer() {
-  min = document.querySelector("#startMin").value;
+  min = document.querySelector("#sartMin").value;
   if (min == "") min = 0;
   sec = document.querySelector("#startSec").value;
   if (sec == "") sec = 0;
@@ -35,7 +35,7 @@ function resetTimer() {
 }
 
 function clearTimer(t) {
-  clearInterval(t); //반복중단하는 함수
+  clearInterval(t);
   document.querySelector("#display").innerText = "";
   document.querySelector("#startMin").value = "";
   document.querySelector("#startSec").value = "";

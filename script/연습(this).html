@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function students(name, kor, math, eng, art) {
+        this.name = name;
+        this.kor = kor;
+        this.math = math;
+        this.eng = eng;
+        this.art = art;
+      }
+
+      students.prototype.getSum = function () {
+        return this.kor + this.math + this.eng + this.art;
+      };
+
+      students.prototype.getAvg = function () {
+        return this.getSum() / 4;
+      };
+
+      students.prototype.toResult = function () {
+        return this.name + "\t" + this.getSum() + "\t\t" + this.getAvg() + "\n";
+      };
+
+      Student = [];
+      Student.push(new students("차은우", 90, 100, 86, 80));
+      Student.push(new students("이준혁", 100, 95, 90, 98));
+      Student.push(new students("강태오", 98, 100, 92, 96));
+      Student.push(new students("김종현", 100, 98, 95, 98));
+      Student.push(new students("서강준", 92, 95, 100, 94));
+
+      let sungjuk = "이름" + "\t" + "총점" + "\t" + "평균" + "\n";
+      sungjuk += "=====================\n";
+      console.log(sungjuk);
+
+      for (let i in Student) {
+        sungjuk += Student[i].toResult() + "\n";
+      }
+      console.log(sungjuk);
+      sungjuk += "=====================";
+      console.log(sungjuk);
+    </script>
+  </body>
+</html>
