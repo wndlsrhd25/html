@@ -11,10 +11,10 @@
   pw2.onchange = comparePw;
 
   function checkId(){
-    if(userId.value.length<4 || userId.valud.length>15) {
+    if(userId.value.length<4 || userId.value.length>15) {
       alert("아이디는 4~15자리의 영문과 숫자로 입력해주세요")
       userId.value =""
-      userId.focuse();
+      userId.focus();
     }
   };
 
@@ -22,7 +22,7 @@
     if(email.value.includes("@")==false){
       alert("잘못된 이메일 형식입니다. 다시 입력해주세요")
       email.value=""
-      emial.focuse();
+      email.focus();
     }
   }
 
@@ -30,7 +30,7 @@
     if(pw1.value.length<8){
       alert("비밀번호는 8자리 이상 입력해주세요")
       pw1.value=""
-      pw1.focuse();
+      pw1.focus();
     }
   }
 
@@ -38,6 +38,6 @@
     if(pw1.value != pw2.value) {
       alert("비밀번호를 확인해주세요")
       pw2.value=""
-      pw2.focuse();
+      pw2.focus();
     }
   }

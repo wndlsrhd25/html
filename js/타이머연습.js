@@ -3,7 +3,7 @@ let sec;
 let timer;
 
 function startTimer() {
-  min = document.querySelector("#sartMin").value;
+  min = document.querySelector("#startMin").value;
   if (min == "") min = 0;
   sec = document.querySelector("#startSec").value;
   if (sec == "") sec = 0;
